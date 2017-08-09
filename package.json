@@ -11,6 +11,7 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
+    "ngrok": "^2.2.17",
     "say": "^0.11.0"
   }
 }
