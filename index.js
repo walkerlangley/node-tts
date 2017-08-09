@@ -39,7 +39,11 @@ app.listen(serverPort, () => {
     addr: serverPort,
     subdomain: 'filo'
   }, (err, url) => {
-    console.log('curl -X POST -d "text=New incoming chat" ' + url + '/speak');
+    if (err) {
+      console.log('Some dumb error: ', err);
+    } else {
+      console.log('curl -H "Content-Type: application/json" -X POST -d \'{"text":"Check is out"}\' https://filo.ngrok.io/speak');
+    }
   });
 });
 

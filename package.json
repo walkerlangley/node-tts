@@ -4,14 +4,13 @@
   "description": "Server that converts test to speech for raspberry pi",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/nodemon index.js"
+    "start": "node index.js"
   },
   "author": "Walker Langley",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
-    "nodemon": "^1.11.0",
     "say": "^0.11.0"
   }
 }
